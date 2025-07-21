@@ -4,10 +4,12 @@ let btn3 = document.getElementById("btn3");
 let ul = document.getElementById("un");
 
 let student = [
-    {name: "b", age: 2},
-    {name: "a", age: 20},
-    {name: "c", age: 19},
-    {name: "d", age: 17}
+    {name: "Deepika", age: 21},
+    {name: "Ganesh", age: 20},
+    {name: "Chandrakala", age: 19},
+    {name: "Srinivas", age: 17},{
+        name:"Vijay",age:18
+    },{name:"Vasu",age:16},{name:"Seetha",age:23},{name:"Ram",age:25}
 ];
 
 let s = [...student].sort((a,b) => a.name[0].localeCompare(b.name[0]));
@@ -20,6 +22,7 @@ function clearList() {
 let asd = (i) => {
     let li = document.createElement('li');
     li.textContent = i.name + "  " + i.age;
+    ul.classList.add('ull')
     ul.appendChild(li);
 }
 
